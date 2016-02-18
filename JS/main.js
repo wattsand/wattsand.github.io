@@ -72,7 +72,6 @@ var st = $(this).scrollTop();
 
 $('li.tumblr_post.tumblr_photo_post img').click(function() {
 	var thisUrl = $(this).next('.tumblr_caption').find('a:first').attr('href');
-	console.log(thisUrl);
     window.location.href = thisUrl;
 });
 
