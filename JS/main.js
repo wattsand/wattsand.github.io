@@ -44,7 +44,7 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
-    var st = $(this).scrollTop();
+var st = $(this).scrollTop();
     
     
     if(Math.abs(lastScrollTop - st) <= delta)
@@ -56,7 +56,7 @@ function hasScrolled() {
         $('.nav ul').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
+    if(st + $(window).height() < $(document).height()) {
             $('.nav ul').removeClass('nav-up').addClass('nav-down');
         }
     }
@@ -87,7 +87,6 @@ $('.contact h3').on('click', function(){
 
 //hamburger
 $('.hamburger').on('click', function (){
-
 	 // $('.nav ul').toggleClass('active');
 	 $('.nav ul').slideToggle('expand');
 	 
