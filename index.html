@@ -2,111 +2,181 @@
 <html lang="en">
  <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Andrea Watts- Portfolio page</title>
    <meta name="description" content="An HTML Starter Template">
+
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900,100italic' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="css/normalize.css"><!-- CSS reset: http://necolas.github.io/normalize.css/ -->
    <link rel="stylesheet" href="css/style.css"><!-- Our site's stylesheet -->
+   <link rel="shortcut icon" type="image/ico" href="images/apple-icon.png"><!-- the favicon -->
 
-   <link rel="shortcut icon" type="image/ico" href="images/favicon.png"><!-- the favicon -->
  </head>
  <body>
 
    <!-- YOUR MARKUP GOES HERE! -->
-   <div class="container">
+  <div class="container">
    
-     <header>
+  <header>
+  <i class="fa fa-bars hamburger"></i>
+  <div class="nav clearfix">
+    <ul class="clearfix">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#resume">RESUME</a></li>
+      <li><a href="#work">WORK</a></li>
+      <li><a href="#musings">MUSINGS</a></li>
+      <li ><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
 
-      <div class="nav">
+  </header>
+
+  <div class="background-image" alt="mountains">
+
+    <h1>ANDREA WATTS</h1>
+
+  <div class="social-media">
+
+    <a href="https://www.linkedin.com/in/wattsandrea" target="_blank"><img src="images/linkedin.png" alt="linked in" class="social-media"></a>
+
+    <a href="http://wattsand.tumblr.com" target="_blank"><img src="images/tumblr.png" alt="tumblr" class="social-media"></a>
+
+    <a href="https://www.pinterest.com/andreawatts22/" target="_blank"><img src="images/pinterest.png" alt="pinterest" class="social-media"></a>
+    
+    <a href="https://www.instagram.com/watts_and/" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-media"></a>
+
+    <a href="mailto:andreawatts22@gmail.com"><img src="images/email.png" alt="email" class="social-media"></a>
+
+  </div>
+
+  </div>
+
+ <!-- <div class="side-nav">
+    <p>HELLO</p> <p>SAY</p>
       <ul>
-        <li class="About"><a href="#">about</a></li>
-        <li class="Work"><a href="#">work</a></li>
-        <li class="Resume"><a href="#">resume</a></li>
-
-        <li class="contact me"><a href="#">contact</a></li>
+        <li><a href="mailto:andreawatts22@gmail.com">email</a></li>
       </ul>
-    </div>
+    </div> -->
 
-    <h1> Andrea Watts </h1>
+  <div class="about" id="about">
+    <h2>ABOUT</h2>
 
-    </header>
+    <p>Hello friend.</p>
 
-    <img src="">
+    <p> My name is Andrea Watts and I am currenly working in digital marketing with a keen interest in design and web development.</p>
+
+    <p>I can often be found in bookstores, brewery-hopping and napping in Chicago, IL.<p>
+
+    <p>Thanks for visiting and please feel free to reach out to me <a href="mailto:andreawatts22@gmail.com">here!</a></p>
 
 
-    <a href="https://www.linkedin.com/in/wattsandrea"><img src="" alt="Linked In" class="social-media"></a>
 
-    <a href="http://wattsand.tumblr.com"><img src="" alt="Tumblr" class="social-media"></a>
+  </div> 	
 
-    <a href="https://www.pinterest.com/andreawatts22/"><img src="" alt="Pinterest" class="social-media"></a>
+   <div class="resume" id="resume">
+  
+    <h2>RESUME</h2>
+
+    <p> I am currently working in digital marketing and I have outlined a portion of my educational and work history below but please feel free to download my resume <a href="resume/resume_AndreaWattsDEC15.docx..pdf" target="_blank">here</a> for an in-depth description!</p>
+
+    <p>EDUCATION//</p>
+    <p>THE UNIVERSITY OF MICHIGAN, Ann Arbor, MI.
+       Bachelor of Arts in Brain Behavior
+       And Cognitive Science; Minor in Art History</p>
+
+    <p>Continuing Education//</p>
+    <p>Introduction to Graphic Design at School of the Art Institue of Chicago</p>
+    <p>Front End Web Develeopment at General Assembly Chicago</p>
+
+    <p>EXPERIENCE//</p>
+    <p>Digital Marketing Coordinator, Modern Luxury, Chicago, IL (April ‘14-present)</p>
+
+    <p>Account Coordinator, Modern Luxury, Chicago, IL (May ’13-April ’14)</p>
+
+    <p>Office Manager, Broony Square Online Gallery & Design, Chicago, IL (November ’12-May ’13)<p>
+
+    <p>SKILLS//</p>
+    <p>MS office suite, social media, Wordpress, familiar with InDesign
+    Strong verbal communication skills; marketing team interactions, presentations, and training sessions
+    Strong written communication
+    skills; advertisement and digital email text, client relations, creative
+    design direction</p>
+
+  </div>
+
+  <div class="work" id="work">
+    <h2>WORK</h2>
+
+    <p>Please stay tuned!</p>
+    <p>I promise good things to come...</p>
+
+  </div>
+
+  <div class="musings clearfix" id="musings">
+    <h2>MUSINGS</h2>
+
+  <div class="tumblr clearfix">
+
+<!-- <script src="//www.powr.io/powr.js" external-type="html"></script> 
+ <div class="powr-tumblr-feed" id="b19e0855_1455673404958"></div> -->
+
+<script type='text/javascript' src='http://wattsand.tumblr.com/js'></script>
+
+
+  </div>
+  </div>
+
+  <div class="contact clearfix" id="contact">
+    <h2>CONTACT</h2>
+
+    <form action="http://formspree.io/andreawatts22@gmail.com" method="POST" data-parsley-validate>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Name" required="true" data-parsley-error-message="Name please!">
+            <label id="email" for="email">Email:</label>
+            <input type="email" name="_replyto" placeholder="Email" required="true" data-parsley-type="email" data-parsley-error-message="Please submit a valid email!">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            <input type="hidden" name="_next" value="/thanks.html" />
+            <input type="submit" value="Send">
+    </form>
+        
+    <ul>
+        <h3>CONTACT INFO&gt;</h3>
+        <li>P: (517.614.2201)</li>
+        <li>A: (910 West Huron. Apt #1106 Chicago, IL. 60642)</li>
+        <li><a href="mailto:andreawatts22@gmail.com">E: (andreawatts22@gmail.com)</li>
+    </ul>
+     
+  </div>
+
+    <a href="#" class="back-to-top"><img src="images/up-arrow.png" alt="up arrow"></a>
+
+  <footer>
+    <p class="footer">&copy; ANDREAWATTS 2016</p>
+
+  <div class ="footer social-media-b">
+
+    <a href="https://www.linkedin.com/in/wattsandrea" target="_blank"><img src="images/linkedin.png" alt="Linked In" class="social-media-b"></a>
+
+    <a href="http://wattsand.tumblr.com" target="_blank"><img src="images/tumblr.png" alt="Tumblr" class="social-media-b"></a>
+
+    <a href="https://www.pinterest.com/andreawatts22/" target="_blank"><img src="images/pinterest.png" alt="Pinterest" class="social-media-b"></a>
     
-    <a href="https://www.instagram.com/watts_and/"><img src="" alt="Instagram" class="social-media"></a>
+    <a href="https://www.instagram.com/watts_and/" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-media-b"></a>
 
+    <a href="mailto:andreawatts22@gmail.com"><img src="images/email.png" alt="email" class="social-media-b"></a>
 
-    <h2>about</h2>
+  </div>
 
-    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  </footer>
 
-   <h2>work</h2>
-   
-   <h2>resume</h2>
+  </div><!-- Container -->
 
-		<p> pdf download</p>
-
-		<p>EDUCATION//
-THE UNIVERSITY OF MICHIGAN, Ann Arbor, MI
-Bachelor of Arts in Brain Behavior
-And Cognitive Science; Minor in Art History
-EXPERIENCE//
-Digital Marketing Coordinator, Modern Luxury, Chicago, IL (April ‘14-present)
-Coordinate, develop and execute all digital media campaigns for Modern Luxury, which includes producing emails and newsletters (100+/month), digital editions (10+/month) and website advertisements (150+/month)
-Actively ensure all creative units are submitted correctly and on time in order to satisfy daily, weekly, and monthly deadlines
-Manage relationships with digital agencies and clients in addition to creating an organized database of all Modern Luxury’s applicable materials
-Systemize and direct 300+ internal marketing projects for 12 separate markets, including the National Modern Luxury Marketing Team, comprised of 25+ individuals
-Account Coordinator, Modern Luxury, Chicago, IL (May ’13-April ’14) Efficiently managed accounts for 30+ sales representatives while managing the design of advertisements for 40 different magazines across 12 major metropolitan areas
-Corresponded with clients to ensure their complete contentment tasked with trafficking all advertisements in an efficient and timely manner
-Effectively communicated deadline and production requirements to the Modern Luxury design team and its appropriate clients
-Office Manager, Broony Square Online Gallery & Design, Chicago, IL (November ’12-May ’13)
-Researched and discovered new talent, writing and editing material to assist with the production of the company website
-Oversaw necessary social media accounts including Facebook and Twitter, in addition to developing new and innovative marketing ideas
-Organized office materials and ensured positive and productive relationships with customers and clients
-SKILLS//
-MS office suite, social media, Wordpress, familiar with InDesign
-Strong verbal communication skills; marketing team interactions, presentations, and training sessions
-Strong written communication
-skills; advertisement and digital email text, client relations, creative
-design direction and interpretation</p>
-
-   <h2>contact</h2>
-
-   		<ul>
-   			<li>phone</li>
-   				<li>517.614.2201</li>
-   			<li><a href="mailto:andreawatts22@gmail.com">email</a></li>
-   			<li>letter</li>
-   				<li> 910 West Huron. Apt #1106. Chicago, IL. 60642</li>
-
-
-     <main>
-       <p></p>
-     </main>
-     <footer>
-       <p> Andrea Watts 2016</p>
-
-     <div class ="footer social-media">
-
-       <a href="https://www.linkedin.com/in/wattsandrea"><img src="" alt="Linked In" class="social-media"></a>
-
-    	<a href="http://wattsand.tumblr.com"><img src="" alt="Tumblr" class="social-media"></a>
-
-    	<a href="https://www.pinterest.com/andreawatts22/"><img src="" alt="Pinterest" class="social-media"></a>
-    
-    	<a href="https://www.instagram.com/watts_and/"><img src="" alt="Instagram" class="social-media"></a>
-    </div>
-
-    </footer>
-
-   </div><!-- Container -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/parsley.min.js"></script>
+  <script src="js/main.js"></script>
 
  </body>
 </html>
